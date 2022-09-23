@@ -1,0 +1,25 @@
+@use 'src/styles/vars';
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background: vars.$background / cover no-repeat url('/home.jpg') ;
+
+
+    &_top {
+        padding: 3em;
+        min-height: 35vh;
+        text-align: left;
+        color: vars.$color-darkblue;
+        border-bottom: solid 2em vars.$color-gray;
+    }
+
+    &_bottom {
+        min-height: 35vh;
+        background-color: vars.$color-lightgray;
+        flex-grow: 2;
+
+    }
+}

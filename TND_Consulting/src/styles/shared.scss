@@ -1,0 +1,15 @@
+@use 'reset';
+@use 'vars';
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,200&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+}
