@@ -13,7 +13,7 @@ export default [
       {
         id: 3,
         name: "Clients",
-        slud: "clients",
+        slug: "clients",
       },
       {
         id: 4,

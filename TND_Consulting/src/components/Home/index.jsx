@@ -13,6 +13,7 @@ const Home = () => {
             </p>
         </div>
         <div className="home_bottom">
+        //TODO Create logo with buttons in SASS
             <img className="home_bottom--content" src="/home_bottom.png" alt="Services logo" />
         </div>
     </div>
