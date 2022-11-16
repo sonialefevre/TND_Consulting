@@ -2,7 +2,10 @@
 import Header from '../src/components/Header';
 import Home from "../src/components/Home";
 import Services from "../src/components/Services";
-import Experience from "../src/components/Experience"
+import Experience from "../src/components/Experience";
+import About from '../src/components/About';
+import Calendar from '../src/components/Calendar';
+import Contact from '../src/components/Contact';
 
 //DATA
 import categories from '../src/catgeories';
@@ -44,6 +47,18 @@ function App() {
       <Route
         path="/experience"
         element={(<Experience experiences={experiences}/>)}
+      />
+      <Route
+        path="/about"
+        element={(<About />)}
+      />
+      <Route
+        path="/calendar"
+        element={(<Calendar />)}
+      />
+      <Route
+        path="/contact_form"
+        element={(<Contact />)}
       />
 
       </Routes>
