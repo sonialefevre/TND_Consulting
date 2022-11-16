@@ -11,7 +11,9 @@ const Header = () => {
 
   return (
     <div className="header">
+      <NavLink to='/'>
         <img className="logo" src={logo} alt="Logo TND Consulting" />
+      </NavLink>
         <div className="header_buttons">  
             {categories.map((category) => (
                 <NavLink key={category.id} to={`/${category.slug}`} >
