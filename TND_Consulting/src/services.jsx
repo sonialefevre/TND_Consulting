@@ -1,32 +1,38 @@
 export default [
-    {
-        id: 1,
-        title: "Implementation Wave2",
-        subtitle: "Traitez-moi de grosse gouine et attaquez moi! Non, j’vais varier les fruits, n’vous inquiétez pas."
-    },
-    {
-        id: 2,
-        title: "BAU",
-        subtitle: "Allez-y mollo avec la joie! Non mais n’exagérez pas non plus! J’vous demande quand même pas de manger des briques! C’est quand même magnifique une armée bien coordonnée, hein! Si ça se trouve? Alors pour nous sortir de là va falloir un plus solide que du si ça se trouve!"
-    },
-    {
-        id: 3,
-        title: "Audit",
-        subtitle: "On pourrait foutre le feu à la forêt pour les obliger à sortir. P’tite pucelle! Animaux de la forêt! Auw auw ouh, woh woh woh woh, auw aouh!"
-    },
-    {
-        id: 4,
-        title: "Hyper Care",
-        subtitle: "On va pas rester plantés là comme des radis. Vous binez pas… Même nous on a pas tout compris. Alors là! Permettez-moi de vous dire! Le coup du mystérieux chevalier gaulois solitaire à la rescousse de l’opprimé. Ca fait vraiment bidon comme légende!"
-    },
-    {
-        id: 5,
-        title: "Training",
-        subtitle: "Vous binez pas… Même nous on a pas tout compris. Vous binez pas… Même nous on a pas tout compris. N’empêche que tout le monde parle de moi! C’est quand même un signe!"
-    },
-    {
-        id: 6,
-        title: "Data Loading",
-        subtitle: "Oh ben ça va on plaisante! Sans vouloir la ramener la seule différence concrète avec les briques c’est que vous appelez ça des tartes. N’empêche que j’suis une légende! A genoux, pas à genoux c’est une chose... Enfin en attendant je vous donne pas tout notre or."
-    },
-]
+  {
+    id: 1,
+    title: "Implementation Wave2",
+    subtitle:
+      "With the experience of 6 end to end implementations across several countries, regions and company types, I will be pleased to implement Workday Absence and/or Time tracking for your company. I have implemented Absence & Time for Europe (Sweden, France, Spain, UK, Ireland, Germany, Belgium, Denmark, Poland, Norway, Finland etc…) US and Asia (China and Australia) and I also learnt part of the legal aspects for those countries.",
+  },
+  {
+    id: 2,
+    title: "BAU",
+    subtitle:
+      "When your configuration is stabilized, you may need to enhance the system or update it. I can help you on this aspect and offer you some of my favorite workarounds I invented during my 6 years working on Workday. I also keep myself updated on a daily basis to provide the best service possible for my customers.",
+  },
+  {
+    id: 3,
+    title: "Audit",
+    subtitle:
+      "If you are facing some issues in Workday Absence & Time tracking in your tenant, I am able to create a personalized tenant audit for your company. The scope is generally this one: Workday best practices check, Technical check, Audit reports, Experience inputs",
+  },
+  {
+    id: 4,
+    title: "Hyper Care",
+    subtitle:
+      "After an implementation I can provide a Hyper care service. It means that any issue due to the implementation of the configuration are handled and fixed if it was within the scope of the project.",
+  },
+  {
+    id: 5,
+    title: "Training",
+    subtitle:
+      "I can provide Absence & Time tracking training, with visual supports and presentation. The scope of skills covered go from Workday basics to Expert Level for your internal HRIS teams.",
+  },
+  {
+    id: 6,
+    title: "Data Loading",
+    subtitle:
+      "Excel is my second professional passion. Since data loading is made with Excel files, I can handle your time off/leave/time tracking/work schedule/holiday calendar loadings (and more).",
+  },
+];
