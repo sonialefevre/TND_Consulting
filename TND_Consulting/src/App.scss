@@ -1,0 +1,23 @@
+@use 'src/styles/shared.scss';
+@use 'src/styles/_vars';
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  &:hover {
+      filter: drop-shadow(0 0 2em #6B99C3);
+      transform: scale(1.1);
+    }
+}
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .App,
+  #root,
+  body,
+  html {
+    min-width: 100%;
+    min-height: 100%;
+  }
+}

@@ -13,6 +13,24 @@
             margin: 0 1em;
             width: 10em;
             padding: 1em 0;
-        }
+            color: #6B99C3;
+            border-radius: 8px;
+            border: 1px solid transparent;
+            font-size: 1em;
+            font-weight: 500;
+            font-family: inherit;
+            background-color: #E4E5EA;
+            cursor: pointer;
+            transition: border-color 0.25s;
+
+                &:hover {
+                        border-color: #6B99C3;
+                        transform: scale(1.1);
+                        box-shadow: 1em 0.5em 0.5em #D2D2D4;                
+                    }
+                &:focus-visible {
+                    outline: 4px auto -webkit-focus-ring-color;
+                }
     }
+}
 }

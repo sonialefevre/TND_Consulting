@@ -2,6 +2,14 @@
 @use 'vars';
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,200&display=swap');
 
+    .App,
+    #root,
+    body,
+    html {
+      min-width: 100vw;
+      min-height: 100vh;
+    }
+
 body {
     font-family: 'Work Sans', sans-serif;
 }
@@ -12,4 +20,15 @@ h1, h2, h3 {
 
 img {
   max-width: 100%;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  .App,
+  #root,
+  body,
+  html {
+    min-width: 100vw;
+    min-height: 100vh;
+  }
 }
