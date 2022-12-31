@@ -21,6 +21,7 @@ import { AppContext } from "./Helper/context";
 //STYLE AND STYLING ELEMENTS
 import logo from "../src/assets/logo.png";
 import "./App.scss";
+import "semantic-ui-css/semantic.min.css";
 
 function App() {
   const contextValue = {

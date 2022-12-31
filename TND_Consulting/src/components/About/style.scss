@@ -1,0 +1,39 @@
+@use 'src/styles/vars';
+
+.pageContainerAbout {
+    background: vars.$background / cover no-repeat url('https://images.pexels.com/photos/1059078/pexels-photo-1059078.jpeg?cs=srgb&dl=pexels-borja-lopez-1059078.jpg&fm=jpg');
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    max-width: 70vw;
+    height: 60vh;
+    margin: 3em auto 0;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 2em;
+    border-radius: 5px;
+        color: vars.$color-darkblue;
+}
+
+.me {
+    font-size: 1.4em;
+    line-height: 1.4em;
+
+    &_title {
+        font-size: 2em;
+        font-weight: 700;
+        margin: 0.3em 0;
+    }
+}
+
+.website {
+    position: relative;
+    left: 25em;
+    top: 2em;
+
+    &_title {
+        font-weight: 600;
+    }
+}
+
+

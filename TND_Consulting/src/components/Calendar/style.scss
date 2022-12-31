@@ -4,11 +4,18 @@
     background: vars.$background / cover no-repeat url('https://images.pexels.com/photos/415071/pexels-photo-415071.jpeg?cs=srgb&dl=pexels-pixabay-415071.jpg&fm=jpg');
     display: flex;
     flex-grow: 1;
+    max-width: 70vw;
+    height: 60vh;
+    margin: 3em auto 0;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 2em;
+    border-radius: 5px;
 }
 
 .calendar {
     border: none;
-    min-width: 60vw;
-    min-height: 60vh;
+    min-width: 50vw;
+    min-height: 50vh;
     margin: 4em auto;
 }

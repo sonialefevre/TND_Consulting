@@ -1,3 +1,60 @@
+@use 'src/styles/vars';
+
+.comments {
+    max-width: 70vw;
+    height: 60vh;
+    margin: 3em auto 0;
+    background: vars.$background / cover no-repeat url('https://images.pexels.com/photos/9082083/pexels-photo-9082083.jpeg?cs=srgb&dl=pexels-moldy-vintages-9082083.jpg&fm=jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 2em;
+    border-radius: 5px;
+}
+
 .formField {
-    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    margin: 0.2em auto;
+    font-size: 1.2em;
+    text-align: left;
+    margin: 0.5em auto;
+}
+
+input {
+    margin: 1em 0;
+    width: 20em;
+    height: 2em;
+    border: none;
+    border-radius: 0.3em;
+}
+textarea {
+    margin-top: 0.8em;
+    height: 10em;
+    width: 20em;
+    border: none;
+    border-radius: 0.3em;
+    resize: none;
+}
+
+.buttonBook {
+    color: vars.$color-grayblue;
+    font-size: 1em;
+    margin: 4em auto;
+    width: 8em;
+    border-radius: 5px;
+    padding: 0.5em 0.5em;
+    border: 1px solid transparent;
+    font-family: inherit;
+    &:hover {
+        border-color: vars.$color-grayblue;
+        transform: scale(1.1);
+        box-shadow: 1em 0.5em 0.5em vars.$color-gray;
+    
+    &:focus-visible {
+        outline: 4px auto -webkit-focus-ring-color;
+    }
+}
 }
