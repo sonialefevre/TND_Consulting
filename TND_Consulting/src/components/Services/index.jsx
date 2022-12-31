@@ -48,10 +48,10 @@ const Services = () => {
           );
         })}
         <div className="slider_buttons">
-          <button className="slider_buttons--button" onClick={prevSlide}>
+          <button className="button" onClick={prevSlide}>
             Previous
           </button>
-          <button className="slider_buttons--button" onClick={nextSlide}>
+          <button className="button" onClick={nextSlide}>
             Next
           </button>
         </div>

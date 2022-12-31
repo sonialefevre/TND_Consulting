@@ -1,4 +1,11 @@
+@use 'src/styles/vars';
+
+
+.pageContainerExperience {
+      height: 100%;
+}
 .slider {
+    background: vars.$background / cover no-repeat url('https://images.pexels.com/photos/6440/magazines-desk-work-workspace.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     max-width: 70vw;
     height: 60vh;
     margin: 3em auto 0;
@@ -7,7 +14,9 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     padding: 2em;
 
+
     &_experience {
+        padding:5em 2em;;
         width: 100%;
         height: 100%;
         position: absolute;
@@ -17,21 +26,22 @@
         &--active {
             opacity: 1;
         }
-
         &_info {
             display: flex;
             flex-direction: row;
             align-items: center;
 
             &_title {
-                font-size: 1.3em;
+                font-size: 1.5em;
+                font-weight: 700;
+                color: vars.$color-darkblue;
                 margin:0 0;
                 width: 8em;
                 text-align: left;
             }
 
             &_content {
-
+                font-size: 1.3em;
             }
         }
 
@@ -62,6 +72,25 @@
 
     &--active {
         background: rgb(32, 32, 32);
-    }
-        
+    }       
 }
+        .button {
+            color: vars.$color-grayblue;
+            font-size: 1em;
+            width: 8em;
+            margin: 0.5em 5em;
+            border-radius: 5px;
+            padding: 0.5em 0.5em;
+            border: 1px solid transparent;
+            font-family: inherit;
+    
+            &:hover {
+                border-color: vars.$color-grayblue;
+                transform: scale(1.1);
+                box-shadow: 1em 0.5em 0.5em vars.$color-gray;
+            }
+    
+            &:focus-visible {
+                outline: 4px auto -webkit-focus-ring-color;
+            }
+        }

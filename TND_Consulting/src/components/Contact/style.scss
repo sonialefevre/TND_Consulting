@@ -1,15 +1,18 @@
+@use 'src/styles/vars';
+
 .hidden {
     display: none;
 }
 
 .contactForm {
     margin: 4em;
-    background-color: blue;
+    background: vars.$background / cover no-repeat url('https://images.pexels.com/photos/4963445/pexels-photo-4963445.jpeg?cs=srgb&dl=pexels-ketut-subiyanto-4963445.jpg&fm=jpg');
     padding: 1em;
-    border-radius: 1em;
+    border-radius: 0.5em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 form {
@@ -20,7 +23,10 @@ form {
 }
 
 label {
-    color: white;
+    color: vars.$color-darkblue;
+    margin-bottom: 0.2em;
+    font-size: 1.5em;
+    font-weight: 700;
 }
 
 input {
@@ -32,8 +38,12 @@ input {
 }
 
 textarea {
+    margin-top: 0.3em;
     height: 10em;
     width: 20em;
+    border: none;
+    border-radius: 0.3em;
+    resize: none;
 }
 
 .button {

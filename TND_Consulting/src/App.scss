@@ -1,6 +1,14 @@
 @use 'src/styles/shared.scss';
 @use 'src/styles/_vars';
 
+    .App,
+    #root,
+    body,
+    html {
+      min-width: 100vw;
+      min-height: 100vh;
+    }
+
 .logo {
   height: 6em;
   padding: 1.5em;
