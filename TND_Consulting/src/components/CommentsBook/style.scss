@@ -1,5 +1,27 @@
 @use 'src/styles/vars';
 
+.commentBlock {
+    background-color: vars.$color-lightgray;
+    max-width: 70vw;
+    text-align: center;
+    margin: 1em auto;
+    border-radius: 5px;
+    padding: 0.5em 0.3em;
+}
+
+.commentBlock h2 {
+    font-size: 1.3em;
+    color: blue;
+}
+
+.commentBlock h2 span {
+    color: red;
+}
+
+.commentBlock p {
+    color: green;
+}
+
 .comments {
     max-width: 70vw;
     height: 60vh;

@@ -1,19 +1,40 @@
-import { useReducer, useState } from "react";
+import { useState, useEffect } from "react";
 import instance from "../../utils/axios";
 import "./style.scss";
 
 const CommentsBook = () => {
+  // Manage inputs state for form data submission
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
   const [comment, setComment] = useState("");
+  const [commentsList, setCommentsList] = useState([]);
+  console.log(commentsList);
 
+  // Call comments list upon component mouting
+  useEffect(() => {
+    getComments();
+  }, []);
+
+  //Retreiving comments from data base
+  const getComments = () => {
+    try {
+      instance.get("/commentsbook").then((response) => {
+        setCommentsList(response.data);
+        console.log(commentsList);
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  // Creating form data to be sent to back-end
   const formData = new FormData();
   formData.append("clientname", name);
   formData.append("clientcompany", company);
   formData.append("comment", comment);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  // Sending comment to database upon form submission
+  const handleSubmit = () => {
     console.log("Form onSubmit happens");
     try {
       instance.post("/commentsbook", formData).then((response) => {
@@ -26,6 +47,19 @@ const CommentsBook = () => {
 
   return (
     <div className="pageContainerComments">
+      {/* TODO: Add button with anchor to comments form */}
+      {/* TODO: Filter comments by higher ID so that latest one appears first */}
+      {commentsList.map((com) => {
+        return (
+          <div className="commentBlock">
+            <h2>
+              {com.clientname} <span>{com.clientcompany}</span>
+            </h2>
+            <p>{com.comment}</p>
+          </div>
+        );
+      })}
+
       <div className="comments">
         <form onSubmit={handleSubmit}>
           <div className="formField">
